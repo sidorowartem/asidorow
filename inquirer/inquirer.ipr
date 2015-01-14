@@ -20,6 +20,9 @@
             <element id="library" level="project" name="Gradle: spring-aop-4.1.4.RELEASE" />
             <element id="library" level="project" name="Gradle: commons-logging-1.2" />
             <element id="library" level="project" name="Gradle: jstl-1.2" />
+            <element id="library" level="project" name="Gradle: postgresql-9.3-1102-jdbc41" />
+            <element id="library" level="project" name="Gradle: spring-jdbc-4.1.4.RELEASE" />
+            <element id="library" level="project" name="Gradle: spring-tx-4.1.4.RELEASE" />
           </element>
         </element>
         <element id="directory" name="META-INF">
@@ -46,6 +49,9 @@
             <element id="library" level="project" name="Gradle: spring-aop-4.1.4.RELEASE" />
             <element id="library" level="project" name="Gradle: commons-logging-1.2" />
             <element id="library" level="project" name="Gradle: jstl-1.2" />
+            <element id="library" level="project" name="Gradle: postgresql-9.3-1102-jdbc41" />
+            <element id="library" level="project" name="Gradle: spring-jdbc-4.1.4.RELEASE" />
+            <element id="library" level="project" name="Gradle: spring-tx-4.1.4.RELEASE" />
           </element>
         </element>
         <element id="directory" name="META-INF">
@@ -102,6 +108,22 @@
     <setting name="root" />
   </component>
   <component name="IdProvider" IDEtalkID="11DA1DB66DD62DDA1ED602B7079FE97C" />
+  <component name="InspectionProjectProfileManager">
+    <profiles>
+      <profile version="1.0" is_locked="false">
+        <option name="myName" value="Project Default" />
+        <option name="myLocal" value="false" />
+        <inspection_tool class="LoggerInitializedWithForeignClass" enabled="false" level="WARNING" enabled_by_default="false">
+          <option name="loggerClassName" value="org.apache.log4j.Logger,org.slf4j.LoggerFactory,org.apache.commons.logging.LogFactory,java.util.logging.Logger" />
+          <option name="loggerFactoryMethodName" value="getLogger,getLogger,getLog,getLogger" />
+        </inspection_tool>
+        <inspection_tool class="SqlNoDataSourceInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+      </profile>
+    </profiles>
+    <option name="PROJECT_PROFILE" value="Project Default" />
+    <option name="USE_PROJECT_PROFILE" value="true" />
+    <version value="1.0" />
+  </component>
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />
     <option name="OPTION_SCOPE" value="protected" />
@@ -256,6 +278,13 @@
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
   </component>
   <component name="libraryTable">
+    <library name="flyway-gradle-plugin-3.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/flyway-gradle-plugin-3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
     <library name="Gradle: aopalliance-1.0">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar!/" />
@@ -308,6 +337,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: postgresql-9.3-1102-jdbc41">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/9.3-1102-jdbc41/e01373bd6ed64d1b3bf1476e5ed6a7652a5fbfcb/postgresql-9.3-1102-jdbc41.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/9.3-1102-jdbc41/3c0023d857e0d156088df3d57619e064dc5a8f6b/postgresql-9.3-1102-jdbc41-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: spring-aop-4.1.4.RELEASE">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.4.RELEASE/c5f571fde64271ac0791d538ee158cb473b1b80a/spring-aop-4.1.4.RELEASE.jar!/" />
@@ -351,6 +389,24 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.1.4.RELEASE/8438d555fbfe425e54b1fc688af71df6212d2b9b/spring-expression-4.1.4.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: spring-jdbc-4.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.1.4.RELEASE/d54f4a5f3e37cd505afbf731b06b9a1c4b564ec1/spring-jdbc-4.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.1.4.RELEASE/afd94a53515e02aee4ce2a5d44d93b167998ac7a/spring-jdbc-4.1.4.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: spring-tx-4.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.1.4.RELEASE/7f1ffeeb32c348b34cdfb7cb24ded39540db7301/spring-tx-4.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.1.4.RELEASE/a0335fa34e3813e85449fb66b1b223408cb6318d/spring-tx-4.1.4.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: spring-web-4.1.4.RELEASE">

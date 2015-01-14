@@ -11,6 +11,7 @@
 apply plugin: 'java'
 apply plugin: 'war'
 apply plugin: 'idea'
+apply plugin: 'flyway'
 
 version = '0.1'
 
@@ -22,13 +23,26 @@ repositories {
     mavenCentral()
 }
 
+buildscript{
+    repositories {
+        mavenCentral()
+    }
+    dependencies{
+        classpath  'org.flywaydb:flyway-gradle-plugin:3.1'
+    }
+}
+
 // In this section you declare the dependencies for your production and test code
 dependencies {
     // The production code uses the SLF4J logging API at compile time
     compile 'org.springframework:spring-webmvc:4.1.4.RELEASE'
+    compile 'org.springframework:spring-jdbc:4.1.4.RELEASE'
 
     //web features
     compile 'jstl:jstl:1.2'
+
+    //database
+    compile 'org.postgresql:postgresql:9.3-1102-jdbc41'
 
     // Declare the dependency for your favourite test framework you want to use in your tests.
     // TestNG is also supported by the Gradle Test task. Just change the
@@ -37,4 +51,17 @@ dependencies {
     testCompile 'junit:junit:4.11'
 
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+}
+
+
+
+def props = new Properties()
+file("src/main/resources/database.properties").withInputStream {
+    stream -> props.load(stream)
+}
+
+flyway {
+    user = props.getProperty("database.user")
+    password = props.getProperty("database.password")
+    url = props.getProperty("database.url")
 }

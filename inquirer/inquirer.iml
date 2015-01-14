@@ -48,6 +48,9 @@
     <orderEntry type="library" exported="" name="Gradle: commons-logging-1.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jstl-1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.servlet-api-3.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: postgresql-9.3-1102-jdbc41" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-jdbc-4.1.4.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-tx-4.1.4.RELEASE" level="project" />
   </component>
 </module>
 
