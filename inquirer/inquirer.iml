@@ -6,7 +6,7 @@
         <fileset id="fileset" name="app-context" removed="false" />
       </configuration>
     </facet>
-    <facet type="web" name="Web Gradle : inquirer-0.1.war">
+    <facet type="web" name="Web Gradle : Inquirer.war">
       <configuration>
         <descriptors>
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
@@ -51,6 +51,9 @@
     <orderEntry type="library" exported="" name="Gradle: postgresql-9.3-1102-jdbc41" level="project" />
     <orderEntry type="library" exported="" name="Gradle: spring-jdbc-4.1.4.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: spring-tx-4.1.4.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-core-2.4.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-databind-2.4.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-annotations-2.4.1" level="project" />
   </component>
 </module>
 

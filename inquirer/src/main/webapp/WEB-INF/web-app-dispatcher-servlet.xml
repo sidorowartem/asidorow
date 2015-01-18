@@ -20,7 +20,7 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <context:property-placeholder location="classpath:database.properties"/>
+    <context:property-placeholder location="classpath:database.properties, classpath:sql_queries.xml"/>
 
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -30,5 +30,13 @@
         <property name="password" value="${database.password}"/>
     </bean>
 
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <mvc:default-servlet-handler/>
+
     <mvc:annotation-driven/>
+
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
 </beans>

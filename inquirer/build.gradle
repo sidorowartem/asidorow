@@ -23,12 +23,12 @@ repositories {
     mavenCentral()
 }
 
-buildscript{
+buildscript {
     repositories {
         mavenCentral()
     }
-    dependencies{
-        classpath  'org.flywaydb:flyway-gradle-plugin:3.1'
+    dependencies {
+        classpath 'org.flywaydb:flyway-gradle-plugin:3.1'
     }
 }
 
@@ -40,6 +40,9 @@ dependencies {
 
     //web features
     compile 'jstl:jstl:1.2'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.4.1'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.4.1'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.4.1'
 
     //database
     compile 'org.postgresql:postgresql:9.3-1102-jdbc41'
@@ -64,4 +67,9 @@ flyway {
     user = props.getProperty("database.user")
     password = props.getProperty("database.password")
     url = props.getProperty("database.url")
+}
+
+
+war {
+    archiveName 'Inquirer.war'
 }
