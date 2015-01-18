@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae0f4c33-79b9-4b56-8fe9-5095c0b21593" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\development\git\asidorow\inquirer\gradle\wrapper\gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\development\git\asidorow\inquirer\gradle\wrapper\gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\development\git\asidorow\inquirer\gradlew" afterPath="" />
-      <change type="DELETED" beforePath="C:\development\git\asidorow\inquirer\gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="C:\development\git\asidorow\inquirer\inquirer.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\development\git\asidorow\inquirer\inquirer.ipr" afterPath="" />
       <change type="DELETED" beforePath="C:\development\git\asidorow\inquirer\inquirer.iws" afterPath="" />
     </list>
     <ignored path="inquirer.iws" />
@@ -1309,7 +1303,7 @@
       <workItem from="1421268624586" duration="2839000" />
       <workItem from="1421346868672" duration="6804000" />
       <workItem from="1421584120705" duration="1232000" />
-      <workItem from="1421585816372" duration="3919000" />
+      <workItem from="1421585816372" duration="3940000" />
     </task>
     <task id="LOCAL-00001" summary="initial version. Nothing works )">
       <created>1421177896288</created>
@@ -1327,11 +1321,15 @@
       <created>1421589738403</created>
       <updated>1421589738403</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Removed some stuff">
+      <created>1421589816953</created>
+      <updated>1421589816953</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23170000" />
+    <option name="totallyTimeSpent" value="23191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1388,7 +1386,8 @@
     <MESSAGE value="Added flyway plugin and created first table. Next step will be adding dummy-data to this table and random question on the main page" />
     <MESSAGE value="Now start page displays one random question. Next step - adding bootstrap styles" />
     <MESSAGE value="Added bootstrap. Next to implement - security and login form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added bootstrap. Next to implement - security and login form" />
+    <MESSAGE value="Removed some stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed some stuff" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
