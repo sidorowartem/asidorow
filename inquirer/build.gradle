@@ -34,9 +34,11 @@ buildscript {
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
-    // The production code uses the SLF4J logging API at compile time
     compile 'org.springframework:spring-webmvc:4.1.4.RELEASE'
     compile 'org.springframework:spring-jdbc:4.1.4.RELEASE'
+
+    compile 'org.springframework.security:spring-security-web:3.2.5.RELEASE'
+    compile 'org.springframework.security:spring-security-config:3.2.5.RELEASE'
 
     //web features
     compile 'jstl:jstl:1.2'

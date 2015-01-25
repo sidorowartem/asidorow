@@ -13,12 +13,12 @@
 <body>
 
 <div class="container">
-    <form class="form-signin">
+    <form class="form-signin" action="j_spring_security_check" method='POST'>
         <h2 class="form-singin-header">Please, sign in</h2>
         <label for="username">Username</label>
-        <input type="text" id="username" placeholder="Username" class="form-control" required autofocus/>
+        <input type="text" id="username" placeholder="Username" class="form-control" required autofocus name="j_username"/>
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Password" class="form-control" required/>
+        <input type="password" id="password" placeholder="Password" class="form-control" required name="j_password"/>
         <button class="btn btn-block btn-primary btn-large" type="submit">Sign in</button>
     </form>
 </div>
